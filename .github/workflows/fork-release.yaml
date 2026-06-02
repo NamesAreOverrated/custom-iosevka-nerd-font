@@ -29,7 +29,7 @@ jobs:
       - name: Set lowercase owner
         id: prep
         run: |
-        echo "owner=${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]' >> $GITHUB_OUTPUT
+         echo "owner=${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]' >> $GITHUB_OUTPUT
 
       - uses: docker/setup-buildx-action@v4
 
