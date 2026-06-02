@@ -1,6 +1,8 @@
+
+
 [buildPlans.afio]
 family = "afio"
-spacing = "term"
+spacing = "fontconfig-mono"
 serifs = "sans"
 noCvSs = true
 exportGlyphNames = false
@@ -24,6 +26,13 @@ shape = "upright"
 menu = "upright"
 css = "normal"
 
+[buildPlans.afio.slopes.slopes.Italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+
 # [buildPlans.afio.slopes.oblique]
 # angle = 9.4
 # shape = "oblique"
@@ -38,25 +47,25 @@ css = "normal"
 #             and "shape" properly only supports number between 100 and 900 (inclusive).
 #             If you decide to use custom weights you have to define all the weights you
 #             plan to use otherwise they will not be built.
-[buildPlans.afio.weights.light]
-shape = 200
-menu  = 300
-css   = 300
+#[buildPlans.afio.weights.light]
+#shape = 200
+#menu  = 300
+#css   = 300
 
-[buildPlans.afio.weights.regular]
-shape = 300
-menu  = 400
-css   = 400
+#[buildPlans.afio.weights.regular]
+#shape = 300
+#menu  = 400
+#css   = 400
 
-[buildPlans.afio.weights.medium]
-shape = 400
-menu  = 500
-css   = 500
+#[buildPlans.afio.weights.medium]
+#shape = 400
+#menu  = 500
+#css   = 500
 
-[buildPlans.afio.weights.bold]
-shape = 500
-menu  = 700
-css   = 700
+#[buildPlans.afio.weights.bold]
+#shape = 500
+#menu  = 700
+#css   = 700
 
 # End weight section
 ###################################################################################################
@@ -66,8 +75,8 @@ css   = 700
 # Format: <upright|italic|oblique> = <"normal"|"italic"|"oblique">
 # When this section is absent, all slants would be built.
 
-[buildPlans.afio.slants]
-upright = "normal"
+#[buildPlans.afio.slants]
+#upright = "normal"
 # italic = "italic"
 # oblique = "oblique"
 
@@ -84,9 +93,12 @@ upright = "normal"
 #             plan to use otherwise they will not be built.
 
 [buildPlans.afio.widths.normal]
-shape = 540        # Width grade of glyph shapes. NOT actual character width.
-menu  = 5          # Width grade for the font's names. NOT actual character width.
-css   = "normal"   # "font-stretch' property of webfont CSS.
+shape = 600
+menu = 5
+css = "normal"
+
+
+
 
 ###################################################################################################
 # Metric overrides
